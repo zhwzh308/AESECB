@@ -14,6 +14,7 @@
 		31BA8A6A1AF9498400EFA0D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31BA8A691AF9498400EFA0D1 /* Images.xcassets */; };
 		31BA8A6D1AF9498400EFA0D1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31BA8A6B1AF9498400EFA0D1 /* LaunchScreen.xib */; };
 		31BA8A791AF9498400EFA0D1 /* AESECBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BA8A781AF9498400EFA0D1 /* AESECBTests.m */; };
+		31BA8A841AF9555700EFA0D1 /* MLCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BA8A831AF9555700EFA0D1 /* MLCrypto.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,9 @@
 		31BA8A721AF9498400EFA0D1 /* AESECBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AESECBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		31BA8A771AF9498400EFA0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31BA8A781AF9498400EFA0D1 /* AESECBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AESECBTests.m; sourceTree = "<group>"; };
+		31BA8A821AF9555700EFA0D1 /* MLCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLCrypto.h; sourceTree = "<group>"; };
+		31BA8A831AF9555700EFA0D1 /* MLCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLCrypto.m; sourceTree = "<group>"; };
+		31BA8A8A1AF95A4500EFA0D1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 		31BA8A501AF9498400EFA0D1 = {
 			isa = PBXGroup;
 			children = (
+				31BA8A8A1AF95A4500EFA0D1 /* Security.framework */,
 				31BA8A5B1AF9498400EFA0D1 /* AESECB */,
 				31BA8A751AF9498400EFA0D1 /* AESECBTests */,
 				31BA8A5A1AF9498400EFA0D1 /* Products */,
@@ -88,6 +93,8 @@
 				31BA8A661AF9498400EFA0D1 /* Main.storyboard */,
 				31BA8A691AF9498400EFA0D1 /* Images.xcassets */,
 				31BA8A6B1AF9498400EFA0D1 /* LaunchScreen.xib */,
+				31BA8A821AF9555700EFA0D1 /* MLCrypto.h */,
+				31BA8A831AF9555700EFA0D1 /* MLCrypto.m */,
 				31BA8A5C1AF9498400EFA0D1 /* Supporting Files */,
 			);
 			path = AESECB;
@@ -222,6 +229,7 @@
 				31BA8A651AF9498400EFA0D1 /* ViewController.m in Sources */,
 				31BA8A621AF9498400EFA0D1 /* AppDelegate.m in Sources */,
 				31BA8A5F1AF9498400EFA0D1 /* main.m in Sources */,
+				31BA8A841AF9555700EFA0D1 /* MLCrypto.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +426,7 @@
 				31BA8A7E1AF9498400EFA0D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		31BA8A7F1AF9498400EFA0D1 /* Build configuration list for PBXNativeTarget "AESECBTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +435,7 @@
 				31BA8A811AF9498400EFA0D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
